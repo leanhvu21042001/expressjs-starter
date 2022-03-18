@@ -1,0 +1,59 @@
+{
+  "name": "expressjs-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/bundle.js",
+    "run-webpack": "rmdir /s /q dist && webpack --mode development --config webpack.config.js",
+    "dev": "nodemon --delay 500ms --exec ./node_modules/.bin/babel-node src/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leanhvu21042001/expressjs-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leanhvu21042001/expressjs-starter/issues"
+  },
+  "homepage": "https://github.com/leanhvu21042001/expressjs-starter#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-validation": "^3.0.8",
+    "helmet": "^5.0.2",
+    "http-status": "^1.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "winston": "^3.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.7",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.0",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
